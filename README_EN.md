@@ -45,6 +45,7 @@ A robust, serverless virtual goods shop built with **Next.js 16**, **Vercel Post
 - **I18n & Theme**:
     - 🌐 **English/Chinese switcher**.
     - 🌓 **Light/Dark/System themes**.
+    - ⏱️ **Auto Update (Upstream Sync)**: GitHub Actions workflow included for Fork users to auto-sync upstream changes and trigger Vercel deploy.
 
 ## 🚀 One-Click Deploy
 
@@ -64,6 +65,17 @@ While the system supports active order status querying, for the best user experi
 
 The shared `vercel.app` domain is sometimes flagged by firewalls or payment gateways, which might delay or block payment callbacks. Using a custom domain avoids these issues.
 
+## 🔄 How to Enable Auto Update
+
+If you forked this project, you can enable GitHub Actions to automatically sync the latest code from upstream (triggering a Vercel redeploy):
+
+1.  Go to your GitHub repository page.
+2.  Click the **Actions** tab.
+3.  Select **Upstream Sync** from the left sidebar.
+4.  Click the **Enable workflow** button.
+5.  (Optional) Click **Run workflow** to test it manually.
+
+Once enabled, the script will check for updates from `chatgptuk/ldc-shop:main` daily and merge them into your repository.
 
 
 ## ⚙️ Configuration Guide
